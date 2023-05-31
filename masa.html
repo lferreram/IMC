@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MASA CORPORAL</title>
+    </head>
+    <body>
+        <h1>MASA CORPORAL</h1>
+        <!--BOTONES-->
+            <p id="Ingreso de datos">INGRESO DE DATOS</p>
+            <input type="text" id="peso"/><button>PESO</button><br>
+            <input type="text" id="altura"/><button>ALTURA</button><br>
+            <input type="text" id="resultado" disabled/>
+            <input type="button" value="Calcular" id="imc" onclick="Calcular()"/>
+           
+    </body>
+    <script>
+    function Calcular(){
+            let peso = parseFloat(document.getElementById("peso").value);
+            let altura = parseFloat(document.getElementById("altura").value);
+            let resultado = peso/(altura*altura);
+            document.getElementById("resultado").value=resultado;
+            let boton = document.getElementById("imc");}
+    </script>
+
+</html>
